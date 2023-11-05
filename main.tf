@@ -30,6 +30,9 @@ module "eks_node_group" {
   nodegroup_keypair = var.nodegroup_keypair
   instance_types  = var.instance_types
   capacity_type  = var.capacity_type
+  desired_size = var.desired_size
+  max_size = var.max_size
+  min_size = var.min_size
 
   depends_on = [
     module.eks_cluster,

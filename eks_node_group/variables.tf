@@ -40,3 +40,18 @@ variable "capacity_type" {
   description = "Capacity type of EKS node group"
   type        = string
 }
+
+variable "desired_size" {
+  description = "Desired size of EKS node group"
+  type        = number
+}
+
+variable "max_size" {
+  description = "Max size of EKS node group"
+  type        = number
+}
+
+variable "min_size" {
+  description = "Min size of EKS node group"
+  type        = number
+}
