@@ -8,7 +8,12 @@ variable "cluster_role" {
   type        = string
 }
 
-variable "node_group_name" {
+variable "node_group_name1" {
+  description = "Assign name for the Node Group"
+  type        = string
+}
+
+variable "node_group_name2" {
   description = "Assign name for the Node Group"
   type        = string
 }

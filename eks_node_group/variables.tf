@@ -6,8 +6,13 @@ locals {
   }
 }
 
-variable "node_group_name" {
-  description = "Assign name for the Node Group"
+variable "node_group_name1" {
+  description = "Assign name for the Node Group1"
+  type        = string
+}
+
+variable "node_group_name2" {
+  description = "Assign name for the Node Group2"
   type        = string
 }
 
@@ -27,6 +32,16 @@ variable "eks_cluster_name" {
 }
 
 variable "eks_subnet_ids" {
+  description = "List subnet ids on which EKS Cluster to be launched"
+  type        = list(string)
+}
+
+variable "eks_subnet_id_node_group1" {
+  description = "List subnet ids on which EKS Cluster to be launched"
+  type        = list(string)
+}
+
+variable "eks_subnet_id_node_group2" {
   description = "List subnet ids on which EKS Cluster to be launched"
   type        = list(string)
 }
