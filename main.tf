@@ -28,6 +28,8 @@ module "eks_node_group" {
   node_group_name   = var.node_group_name
   node_role_name    = var.node_role_name
   nodegroup_keypair = var.nodegroup_keypair
+  instance_types  = var.instance_types
+  capacity_type  = var.capacity_type
 
   depends_on = [
     module.eks_cluster,

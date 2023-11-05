@@ -30,3 +30,13 @@ variable "eks_subnet_ids" {
   description = "List subnet ids on which EKS Cluster to be launched"
   type        = list(string)
 }
+
+variable "instance_types" {
+  description = "Instance types of EKS node group"
+  type        = list
+}
+
+variable "capacity_type" {
+  description = "Capacity type of EKS node group"
+  type        = string
+}

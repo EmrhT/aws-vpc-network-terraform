@@ -23,4 +23,7 @@ resource "aws_eks_node_group" "ubuntu_22_ngp" {
     aws_iam_role.node_role,
     aws_iam_role_policy_attachment.node_policy_attach
   ]
+
+  instance_types  = var.instance_types
+  capacity_type  = var.capacity_type
 }

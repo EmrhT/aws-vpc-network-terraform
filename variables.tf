@@ -47,3 +47,13 @@ variable "private_subnets" {
   description = "Provide private subnets CIDR values"
   type        = map(any)
 }
+
+variable "instance_types" {
+  description = "Instance types of EKS node group"
+  type        = list
+}
+
+variable "capacity_type" {
+  description = "Capacity type of EKS node group"
+  type        = string
+}
