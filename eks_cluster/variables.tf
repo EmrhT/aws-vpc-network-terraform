@@ -19,6 +19,11 @@ variable "eks_cluster_policy_arn" {
   default     = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
 }
 
+variable "cluster_version" {
+  description = "Version of the EKS Cluster"
+  type        = string
+}
+
 locals {
   common_tags = {
     "Appication" = "EKS_Cluster"

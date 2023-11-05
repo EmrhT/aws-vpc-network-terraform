@@ -77,3 +77,9 @@ variable "min_size" {
   description = "Min size of EKS node group"
   type        = number
 }
+
+variable "cluster_version" {
+  description = "Min size of EKS node group"
+  type        = string
+  default = "1.27"
+}

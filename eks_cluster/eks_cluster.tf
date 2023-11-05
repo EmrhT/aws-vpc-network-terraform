@@ -9,4 +9,6 @@ resource "aws_eks_cluster" "eks_cluster" {
   depends_on = [
     aws_iam_role.eks_cluster_role
   ]
+
+  version = var.cluster_version
 }

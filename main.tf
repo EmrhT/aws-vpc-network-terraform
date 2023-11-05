@@ -14,6 +14,7 @@ module "eks_cluster" {
   eks_subnet_ids   = flatten([module.eks_vpc.pub_subnets, module.eks_vpc.priv_subnets])
   eks_cluster_name = var.eks_cluster_name
   cluster_role     = var.cluster_role
+  cluster_version = var.cluster_version
 
   depends_on = [
     module.eks_vpc
